@@ -14,7 +14,10 @@ db1=mysql.connector.connect(
 
 mycursor=db1.cursor()
 mylist=list()
-a=xlrd.open_workbook("Book1.xls") 
+#if the file is in the same directory/folder as this ".py" file than enter the file name with ".xls"
+#but if it is not in the same folder than you'll have to enter the file path in the parenthesis
+#example: open_workbook("C:\\Users\\YourPcName\\Desktop\\Some_Folder\\SomeExcelFileName.xls") 
+a=xlrd.open_workbook("Book1.xls")   
 sheet=a.sheet_by_index(0)
 sheet.cell_value(0,0)
 #Range can be change when data get bigger
