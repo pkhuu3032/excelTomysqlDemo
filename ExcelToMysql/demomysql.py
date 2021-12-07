@@ -44,7 +44,8 @@ db1.close()
 
 
 
-
+#ignore this code down below.
+#this was to test and see if table was able to be created
 '''
 mycursor=db1.cursor()
 
